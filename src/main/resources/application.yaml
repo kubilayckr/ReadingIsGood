@@ -1,0 +1,11 @@
+spring:
+  config:
+    activate:
+      on-profile: default
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/ReadingIsGood
+      #uri: mongodb://localhost:27017/ReadingIsGood
+      auto-index-creation: true
+server:
+  host: localhost:8080

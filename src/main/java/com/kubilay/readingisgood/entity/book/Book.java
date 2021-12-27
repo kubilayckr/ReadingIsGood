@@ -18,6 +18,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document("Book")
+@CompoundIndex(def = "{'title': 1, 'author': 1}", unique = true)
 public class Book {
 
     @Transient
